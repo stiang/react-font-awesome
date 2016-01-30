@@ -9,7 +9,7 @@ var React = require('react');
 function cs(classes) {
   var activeClasses = [];
   Object.keys(classes).forEach(function(c) {
-    if (c) {
+    if (classes[c]) {
       activeClasses.push(c);
     }
   });
