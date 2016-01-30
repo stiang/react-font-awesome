@@ -5,7 +5,7 @@
 'use strict';
 
 var React = require('react');
-var dom = require('react-dom');
+var dom = require('react/dom');
 
 function cs(classes) {
   var activeClasses = [];
@@ -40,7 +40,7 @@ function createIcon(type) {
 
       return this.transferPropsTo(
         dom.i({className: className}, this.props.children)
-        );
+      );
     }
   });
 }
@@ -56,7 +56,7 @@ var IconStack = React.createClass({
 
     return this.transferPropsTo(
       dom.span({className: className}, this.props.children)
-      );
+    );
   }
 });
 
@@ -69,7 +69,7 @@ var Ul = React.createClass({
 
     return this.transferPropsTo(
       dom.ul({className: className}, this.props.children)
-      );
+    );
   }
 });
 
