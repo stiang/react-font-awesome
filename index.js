@@ -5,7 +5,7 @@
 'use strict';
 
 var React = require('react');
-var dom = require('react/dom');
+var dom = React.DOM;
 
 function cs(classes) {
   var activeClasses = [];
